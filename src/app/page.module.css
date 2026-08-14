@@ -1,0 +1,51 @@
+.about {
+  background: var(--bg-elevated);
+}
+
+.aboutGrid {
+  display: grid;
+  gap: clamp(2.5rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.aboutCopy {
+  display: grid;
+  gap: 1rem;
+}
+
+.aboutCopy :global(.section-lead) {
+  margin-bottom: 0.35rem;
+}
+
+.aboutCopy p:not(:global(.section-label)):not(:global(.section-lead)) {
+  color: var(--ink-soft);
+  max-width: 38rem;
+}
+
+.aboutActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.aboutMedia {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+}
+
+.aboutImg {
+  object-fit: contain;
+}
+
+@media (min-width: 900px) {
+  .aboutGrid {
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 4.5rem;
+  }
+
+  .aboutMedia {
+    height: 330px;
+  }
+}

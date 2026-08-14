@@ -1,0 +1,30 @@
+.section {
+  background: var(--bg);
+}
+
+.grid {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.copy {
+  display: grid;
+  gap: 1rem;
+  color: var(--ink-soft);
+  max-width: 42rem;
+}
+
+.copy a {
+  color: var(--brand-deep);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 3.5rem;
+  }
+}

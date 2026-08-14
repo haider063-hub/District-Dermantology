@@ -1,0 +1,27 @@
+.section {
+  background: var(--bg);
+}
+
+.grid {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.side {
+  display: grid;
+  gap: 0.85rem;
+  align-content: start;
+}
+
+.side h2 {
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1.2fr 0.7fr;
+    gap: 4rem;
+  }
+}

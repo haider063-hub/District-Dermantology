@@ -1,0 +1,59 @@
+.wrap {
+  background: #0d3545;
+  color: #fff;
+  padding: clamp(2.75rem, 5vw, 3.5rem) 0;
+}
+
+.inner {
+  display: grid;
+  gap: 1.5rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.quote {
+  max-width: 42rem;
+}
+
+.quote p {
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  font-size: clamp(1.35rem, 3vw, 1.85rem);
+  line-height: 1.45;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.quote cite {
+  font-style: normal;
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--brand);
+  font-weight: 700;
+}
+
+.quote cite span {
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.dots {
+  display: flex;
+  gap: 0.55rem;
+}
+
+.dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 999px;
+  border: 0;
+  background: rgba(255, 255, 255, 0.28);
+  cursor: pointer;
+}
+
+.active {
+  background: var(--brand);
+  transform: scale(1.2);
+}

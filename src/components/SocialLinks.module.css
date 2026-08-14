@@ -1,0 +1,41 @@
+.list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid rgba(245, 249, 249, 0.22);
+  background: transparent;
+  color: rgba(245, 249, 249, 0.88);
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.link svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: currentColor;
+}
+
+.link:hover {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #0d1a1c;
+  transform: translateY(-2px);
+}
+
+.link:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+}

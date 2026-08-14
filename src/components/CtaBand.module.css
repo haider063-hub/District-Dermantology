@@ -1,0 +1,83 @@
+.band {
+  background: var(--brand);
+  color: #0d1a1c;
+  padding: clamp(3.25rem, 7vw, 4.5rem) 0;
+}
+
+.inner {
+  display: grid;
+  gap: 1.75rem;
+  align-items: center;
+}
+
+.copy {
+  max-width: 40rem;
+}
+
+.title {
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  font-weight: 500;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  margin: 0 0 16px;
+  color: #0d1a1c;
+}
+
+.lead {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  color: rgba(13, 26, 28, 0.82);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  padding-right: 8px;
+  padding-bottom: 8px;
+}
+
+.btnDark {
+  background: #0d3545;
+  color: #fff;
+  border-color: #0d3545;
+}
+
+.btnDark:hover {
+  background: #0a2a36;
+  color: #fff;
+  box-shadow: 5px 5px 0 0 #ffffff;
+}
+
+.btnLight {
+  background: #fff;
+  color: #0d1a1c;
+  border-color: #fff;
+}
+
+.btnLight:hover {
+  background: #f5f9f9;
+  color: #0d1a1c;
+  box-shadow: 5px 5px 0 0 #0d3545;
+}
+
+@media (min-width: 900px) {
+  .inner {
+    grid-template-columns: 1.3fr auto;
+    gap: 2.5rem;
+  }
+
+  .title {
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+  }
+
+  .lead {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+}

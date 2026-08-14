@@ -1,0 +1,89 @@
+.section {
+  background: var(--bg);
+}
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem 2rem;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 2.75rem;
+}
+
+.headCopy {
+  flex: 1 1 18rem;
+  min-width: 0;
+}
+
+.headCopy :global(.section-lead) {
+  margin-bottom: 0;
+}
+
+.cta {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 16px;
+  padding: 8px 20px;
+  margin-bottom: 0.15rem;
+}
+
+@media (min-width: 768px) {
+  .cta {
+    padding: 12px 20px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 0;
+}
+
+.item {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.photo {
+  position: relative;
+  aspect-ratio: 16 / 11;
+  overflow: hidden;
+  background: #dfe8e8;
+}
+
+.photo img {
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.item:hover .photo img {
+  transform: scale(1.04);
+}
+
+.copy h3 {
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.copy span {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-deep);
+  font-weight: 700;
+}
+
+@media (min-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.75rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

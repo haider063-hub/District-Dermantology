@@ -1,0 +1,54 @@
+.section {
+  background: var(--bg);
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.media {
+  position: relative;
+  aspect-ratio: 16 / 11;
+  overflow: hidden;
+  background: #e4ecec;
+}
+
+.media img {
+  object-fit: cover;
+}
+
+.copy {
+  display: grid;
+  gap: 1rem;
+  color: var(--ink-soft);
+  max-width: 38rem;
+}
+
+.copy a {
+  color: var(--brand-deep);
+  font-weight: 700;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.actions :global(.btn-primary) {
+  color: #fff;
+}
+
+.actions :global(.btn-primary:hover) {
+  color: #fff;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 3rem;
+  }
+}
