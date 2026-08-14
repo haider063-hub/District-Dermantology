@@ -2,6 +2,10 @@
   background: var(--bg-elevated);
 }
 
+.sectionMuted {
+  background: var(--bg);
+}
+
 .grid {
   display: grid;
   gap: 2rem;

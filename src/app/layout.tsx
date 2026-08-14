@@ -3,6 +3,8 @@ import { Inter, Manrope } from "next/font/google";
 import { CtaBand } from "@/components/CtaBand";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { SmoothScroll } from "@/components/SmoothScroll";
+import "lenis/dist/lenis.css";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -43,15 +45,17 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body suppressHydrationWarning>
-        <a className="skip-link" href="#main">
-          Skip to main content
-        </a>
-        <Header />
-        <main id="main" className="site-main">
-          {children}
-        </main>
-        <CtaBand />
-        <Footer />
+        <SmoothScroll>
+          <a className="skip-link" href="#main">
+            Skip to main content
+          </a>
+          <Header />
+          <main id="main" className="site-main">
+            {children}
+          </main>
+          <CtaBand />
+          <Footer />
+        </SmoothScroll>
       </body>
     </html>
   );

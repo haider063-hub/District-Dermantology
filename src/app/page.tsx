@@ -49,9 +49,9 @@ export default function HomePage() {
 
       <ServicesGrid limit={8} />
       <TestimonialRotator />
-      <DoctorsGrid />
+      <DoctorsGrid muted />
       <FaqSection />
-      <Locations />
+      <Locations muted />
     </>
   );
 }

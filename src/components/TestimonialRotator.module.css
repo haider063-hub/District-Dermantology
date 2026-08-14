@@ -1,5 +1,6 @@
 .wrap {
   background: var(--bg-elevated);
+  border-bottom: 1px solid var(--line);
 }
 
 .head {
