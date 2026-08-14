@@ -28,7 +28,7 @@ export function Footer() {
               {SITE.phoneDisplay}
             </a>
             <Link href="/contact" className="btn btn-on-dark">
-              Contact us
+              Book Appointment
             </Link>
             <a href={SITE.onlinePayUrl} className="btn btn-on-dark" target="_blank" rel="noreferrer">
               Online Pay

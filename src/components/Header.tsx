@@ -177,7 +177,7 @@ export function Header() {
             {SITE.phoneDisplay}
           </a>
           <Link href="/contact" className={`btn btn-primary ${styles.schedule}`}>
-            Contact us
+            Book Appointment
           </Link>
           <button
             type="button"
@@ -242,7 +242,7 @@ export function Header() {
             {SITE.phoneDisplay}
           </a>
           <Link href="/contact" className="btn btn-primary">
-            Contact us
+            Book Appointment
           </Link>
           <a href={SITE.onlinePayUrl} className="btn btn-outline" target="_blank" rel="noreferrer">
             Online Pay

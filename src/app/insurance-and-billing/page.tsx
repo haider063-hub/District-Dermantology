@@ -58,7 +58,7 @@ export default function InsurancePage() {
               Call {SITE.phoneDisplay}
             </a>
             <Link href="/contact" className="btn btn-outline">
-              Contact us
+              Book Appointment
             </Link>
           </aside>
         </div>

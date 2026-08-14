@@ -58,7 +58,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                 Call {SITE.phoneDisplay}
               </a>
               <Link href="/contact" className="btn btn-outline">
-                Contact us
+                Book Appointment
               </Link>
               <Link href="/services" className="btn btn-outline">
                 All services

@@ -13,7 +13,6 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <TestimonialRotator />
 
       <section className={`section ${styles.about}`} id="about">
         <div className={`container ${styles.aboutGrid}`}>
@@ -49,6 +48,7 @@ export default function HomePage() {
       </section>
 
       <ServicesGrid limit={8} />
+      <TestimonialRotator />
       <DoctorsGrid />
       <FaqSection />
       <Locations />

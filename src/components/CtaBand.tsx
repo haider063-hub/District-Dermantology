@@ -20,7 +20,7 @@ export function CtaBand() {
             Call {SITE.phoneDisplay}
           </a>
           <Link href="/contact" className={`btn ${styles.btnLight}`}>
-            Contact us
+            Book Appointment
           </Link>
         </div>
       </div>

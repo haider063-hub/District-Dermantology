@@ -1,5 +1,5 @@
 .wrap {
-  background: var(--bg);
+  background: var(--bg-elevated);
 }
 
 .head {
@@ -239,12 +239,12 @@
 
   .fadeLeft {
     left: 0;
-    background: linear-gradient(90deg, var(--bg), transparent);
+    background: linear-gradient(90deg, var(--bg-elevated), transparent);
   }
 
   .fadeRight {
     right: 0;
-    background: linear-gradient(270deg, var(--bg), transparent);
+    background: linear-gradient(270deg, var(--bg-elevated), transparent);
   }
 }
 

@@ -43,7 +43,7 @@ export default async function LocationPage({ params }: Props) {
               {SITE.phoneDisplay}
             </a>
             <Link href="/contact" className="btn btn-outline">
-              Contact us
+              Book Appointment
             </Link>
             {loc.yelpUrl ? (
               <a href={loc.yelpUrl} className="btn btn-outline" target="_blank" rel="noreferrer">
@@ -69,7 +69,7 @@ export default async function LocationPage({ params }: Props) {
             <h2>Get in touch</h2>
             <p className={styles.address}>{loc.addressDisplay}</p>
             <Link href="/contact" className={styles.contactLink}>
-              Contact Us →
+              Book Appointment →
             </Link>
           </div>
           <div className={styles.map}>
